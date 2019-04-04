@@ -11,6 +11,14 @@ public class Order {
     private OrderStatus status;
     private int id;
 
+    public Order() {
+    }
+
+    public Order(int orderId, OrderStatus status) {
+        id = orderId;
+        this.status = status;
+    }
+
     public BigDecimal getTotal() {
         return total;
     }
@@ -42,6 +50,7 @@ public class Order {
     public void setTax(BigDecimal tax) {
         this.tax = tax;
     }
+
 
     public OrderStatus getStatus() {
         return status;
