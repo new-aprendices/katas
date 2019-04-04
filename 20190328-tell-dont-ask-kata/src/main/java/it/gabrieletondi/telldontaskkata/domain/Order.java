@@ -21,7 +21,8 @@ public class Order {
     }
 
     public Order(int orderId, OrderStatus status) {
-        id = orderId;
+        this();
+        this.id = orderId;
         this.status = status;
     }
 
